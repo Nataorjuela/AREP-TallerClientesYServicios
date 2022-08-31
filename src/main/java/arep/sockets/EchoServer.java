@@ -1,4 +1,4 @@
-package edu.escuelaing.arem;
+package arep.sockets;
 
 import java.net.*;
 import java.io.*;

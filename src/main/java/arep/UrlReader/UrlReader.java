@@ -1,4 +1,4 @@
-package edu.escuelaing.arem;
+package arep.UrlReader;
 
 import java.io.*;
 import java.net.*;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class URLReader {
+public class UrlReader {
 	public static void main(String[] args) throws Exception {
 		String site = "http://www.google.com/";
 
