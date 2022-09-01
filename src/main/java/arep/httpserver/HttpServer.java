@@ -13,7 +13,8 @@ public class HttpServer {
 			System.exit(1);
 		}
 		Socket clientSocket = null;
-		while (true) {
+		boolean bandera=true;
+		while (bandera) {
 
 			try {
 				System.out.println("Listo para recibir ...");
@@ -49,7 +50,7 @@ public class HttpServer {
 			clientSocket.close();
 
 		}
-		//serverSocket.close();
+		serverSocket.close();
 	}
 
 	public static String getForm(){
@@ -65,7 +66,7 @@ public class HttpServer {
 				"        <h1>Form with GET</h1>\n" +
 				"        <form action=\"/hello\">\n" +
 				"            <label for=\"name\">Name:</label><br>\n" +
-				"            <input type=\"text\" id=\"name\" name=\"name\" value=\"John\"><br><br>\n" +
+				"            <input type=\"text\" id=\"name\" name=\"name\" value=\"Nata\"><br><br>\n" +
 				"            <input type=\"button\" value=\"Submit\" onclick=\"loadGetMsg()\">\n" +
 				"        </form> \n" +
 				"        <div id=\"getrespmsg\"></div>\n" +
